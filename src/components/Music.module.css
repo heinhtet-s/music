@@ -1,0 +1,110 @@
+.container {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.music_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+.music_collection {
+  box-shadow: 0px 3px 7px rgb(206, 204, 204);
+  border-radius: 5px;
+}
+.music_container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.details p {
+  cursor: pointer;
+  transition: 1s;
+}
+.details p:hover {
+  text-decoration: underline;
+}
+.song {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+/* Tablet */
+.banner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.music_btn:hover {
+  background-color: #5cbf2a;
+}
+.music_btn {
+  background-color: #44c767;
+  border-radius: 28px;
+  transition: 1s;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .music_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+  }
+
+  .music_collection {
+    box-shadow: 0px 3px 7px rgb(206, 204, 204);
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+  }
+  .music_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .music_collection {
+    box-shadow: 0px 3px 7px rgb(206, 204, 204);
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+  }
+  .music_container img {
+    width: 100%;
+
+    margin: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
