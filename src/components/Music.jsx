@@ -23,6 +23,7 @@ import ReactAudioPlayer from 'react-audio-player'
 function Music() {
   const navigate=useNavigate();
   const detailHandler = (id) => {
+  
     switch (id) {
       case "music1":
           return music1;
@@ -60,13 +61,13 @@ function Music() {
             <div>
             <img src={img1} />
             </div>
-            <div style={{width: "100%",paddingLeft: "10px",paddingRight: "10px" }} >
+            <div style={{width: "97%",paddingLeft: "10px",paddingRight: "10px" }} >
             <p className={classes.song}>{item.title}</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis molestias, quas neque porro necessitatibus ipsam eius illo distinctio esse, beatae recusandae. Cumque natus optio at nesciunt id. Esse, sint!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, 
               </p>
               <ReactAudioPlayer
-      src={()=>detailHandler( item.song )}
+      src={detailHandler(item.song)}
   style={{width: '100%'}}
   controls
 />
