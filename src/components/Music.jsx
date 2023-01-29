@@ -53,10 +53,10 @@ album ထဲ မှာ တော်လှန်ရေးအတွက် စိ�
             <div className={classes.details}>
               <p>
               </p>
-              <button className={classes.music_btn} style={{    marginLeft: "auto", 
+              <a href="https://www.facebook.com/profile.php?id=100087630447354&mibextid=ZbWKwL" target="_blank" className={classes.music_btn} style={{    marginLeft: "auto", 
     display: "block",}}>
     Buy
-</button>
+</a>
             </div>
             
             </div>
