@@ -7,7 +7,6 @@ import music4 from '../assets/4.wav'
 import music5 from '../assets/5.wav'
 import music6 from '../assets/6.wav'
 import img1 from '../assets/1.jpg' 
-import image1 from "../assets/Slider.jpg";
 import classes from './Music.module.css';
 import { useParams } from 'react-router-dom';
 const MusicDetail = () => {

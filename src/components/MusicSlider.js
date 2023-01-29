@@ -6,6 +6,10 @@ import image2 from "../assets/Slider2.jpg";
 import image3 from "../assets/Slider4.jpg";
 import image4 from "../assets/img1.jpg";
 import image5 from "../assets/img2.jpg";
+import img2 from "../assets/banner1.jpg";
+import img3 from "../assets/banner2.jpg";
+import img4 from "../assets/banner3.png";
+import img5 from "../assets/banner4.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -28,19 +32,16 @@ function MusicSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={image5} className={classes.image} />
+          <img src={img2} className={classes.image} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image4} className={classes.image} />
+          <img src={img3} className={classes.image} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1} className={classes.image} />
+          <img src={img4} className={classes.image} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image2} className={classes.image} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image3} className={classes.image} />
+          <img src={img5} className={classes.image} />
         </SwiperSlide>
       </Swiper>
     </>
