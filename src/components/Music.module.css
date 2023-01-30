@@ -2,7 +2,6 @@
   max-width: 1180px;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 .music_container {
   display: grid;
@@ -51,13 +50,13 @@
   overflow: hidden;
 }
 .music_btn:hover {
-  background-color: #5cbf2a;
+  background-color: rgb(237, 17, 17);
 }
 .music_btn {
-  background-color: #0f752a;
+  background-color: #eb0909;
   border-radius: 28px;
   transition: 1s;
-  border: 1px solid #05b61a;
+  border: 1px solid rgb(237, 17, 17);
   display: inline-block;
   cursor: pointer;
   color: #ffffff;

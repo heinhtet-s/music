@@ -12,6 +12,7 @@ function Music() {
   const navigate=useNavigate();
 
   return (
+    <>
     <div className={classes.container}>
         <div className={classes.banner}>
             <MusicSlider></MusicSlider>
@@ -62,86 +63,20 @@ album ထဲ မှာ တော်လှန်ရေးအတွက် စိ�
             </div>
           </div>
            )
-
         }
         )
         }
            
          
    
-            {/* <div className={classes.music_collection}>
-              <div>
-              <img src={img2}></img>
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img3}></img>
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img4} />
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img5} />
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img6}></img>
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img7}></img>
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div>
-            <div className={classes.music_collection}>
-              <div>
-              <img src={img8}></img>
-              </div>
-              <p className={classes.song}>Song Name</p>
-              <div className={classes.details}>
-                <p>Details</p>
-                <p>Prices</p>
-              </div>
-            </div> */}
-         {/* Images */}
+        
         </div>
+       
     </div>
+     <div style={{backgroundColor: "red",color: "white" ,marginTop: "20px" , padding:"3px",textAlign: "center"}} >
+     Copyright 2023 © WAFB | Powered by Quokka Studio
+     </div>
+     </>
   )
 }
 
