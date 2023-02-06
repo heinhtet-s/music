@@ -52,7 +52,7 @@
 .music_btn:hover {
   background-color: rgb(237, 17, 17);
 }
-.music_btn {
+/* .music_btn {
   background-color: #eb0909;
   border-radius: 28px;
   transition: 1s;
@@ -67,6 +67,53 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
   margin-bottom: 10px;
+  
+} */
+.buyInput{
+  width:80%;
+  outline: none;
+  border:none;
+  background: rgb(202, 200, 200);
+ padding:10px 0;
+  color:rgb(20, 19, 19);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding-left: 10px;
+  margin:auto;
+  display: block;
+
+}
+.buyBtn{
+  background-color: rgb(237, 17, 17);
+  border-radius: 20px;
+  transition: 1s;
+  border: 1px solid rgb(237, 17, 17);
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  padding:5px 20px;
+ margin:auto;
+ align-self: flex-end;
+}
+::placeholder{
+  color:rgb(31, 30, 30);
+}
+
+.contact{
+  margin-top: 20px;
+}
+.contact a{
+  /* text-align: center; */
+  margin-top: 0px;
+padding-left:20px
+
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .music_container {
