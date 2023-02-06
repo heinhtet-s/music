@@ -1,15 +1,44 @@
 import img1 from '../assets/1.jpg' 
 
 
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import  classes from './Music.module.css'
 import MusicSlider from './MusicSlider'
 import Data from './MusicData'
 import { useNavigate } from 'react-router-dom'
 import ReactAudioPlayer from 'react-audio-player'
+import BuyModal from './BuyModal'
 import video6 from "../assets/video6.mp4";
 function Music() {
   const navigate=useNavigate();
+  const [codes,setCodes]= useState([])
+  useEffect(()=>{
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    function generateString(length) {
+    let result = '';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+   }
+  var generateRandomArray = function(num, length) {
+    var x = [];
+    
+    for (var y = 0; y < length; y++) {
+      x.push(generateString(num));
+    }
+  
+    return x;
+  }
+  
+  let newArray = generateRandomArray(8,1000);
+  setCodes(newArray)
+ 
+
+},[])
+console.log(codes[0])
 
   return (
     <>
@@ -54,12 +83,8 @@ album ထဲ မှာ တော်လှန်ရေးအတွက် စိ�
             <div className={classes.details}>
               <p>
               </p>
-              <a href="https://www.facebook.com/profile.php?id=100087630447354&mibextid=ZbWKwL" target="_blank" className={classes.music_btn} style={{    marginLeft: "auto", 
-    display: "block",}}>
-    Buy
-</a>
+              <BuyModal codes={codes}></BuyModal>
             </div>
-            
             </div>
           </div>
            )
