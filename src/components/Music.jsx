@@ -10,7 +10,6 @@ import ReactAudioPlayer from 'react-audio-player'
 import video6 from "../assets/video6.mp4";
 function Music() {
   const navigate=useNavigate();
-
   return (
     <>
     <div className={classes.container}>
