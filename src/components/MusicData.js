@@ -12,6 +12,12 @@ import video6 from "../assets/video6.mp4";
 
 const Data = [
   {
+    title: "အဆုံးသတ်ရမဲ့ပွဲ",
+    link: "",
+    song: music1,
+    video: video4,
+  },
+  {
     title: "သို့",
     link: "",
     song: music2,
@@ -30,10 +36,10 @@ const Data = [
     video: video3,
   },
   {
-    title: "အဆုံးသတ်ရမဲ့ပွဲ",
+    title: "Our Nation",
     link: "",
-    song: music1,
-    video: video4,
+    song: music5,
+    video: video6,
   },
   {
     title: "သို့",
@@ -41,11 +47,6 @@ const Data = [
     song: music6,
     video: video1,
   },
-  {
-    title: "Our Nation",
-    link: "",
-    song: music5,
-    video: video6,
-  },
+ 
 ];
 export default Data;

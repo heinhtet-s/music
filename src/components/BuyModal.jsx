@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React,{useState} from 'react'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
@@ -38,15 +38,17 @@ function BuyModal({codes}) {
     const handleClose = () => setOpen(false);
     const [codeNo,setCodeNo] = useState('');
     const submitHandler =(e)=>{
+      let success=false;
         e.preventDefault();
-        codes.map(cc=>{
-            if(cc==codeNo){
-                swal('Success')
-            }
-            else{
-                swal("Error")
+        codes.forEach(el=>{
+            if(el==codeNo){
+                success=true
+               swal('success')
             }
         })
+        if(!success){
+          swal('Error')
+        }
       
     }
   return (
